@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <table>
+        <thead>
+        <tr>
+            <th>Nom</th>
+            <th>Prenom</th>
+            <th>Groupe</th>
+            
+        </tr>
+        </thead>
+        <tbody>
+        {% for musicien in musiciens %}
+        
+        
+        <tr>           
+            <td>{{ musicien.nom }}</td>
+            <td>{{ musicien.prenom }}</td>
+            <td>{{ groupe.nom }}</td>
+        {% endfor %}
+        
+        </tbody>
+    </table>
+   
+{% endblock %}
